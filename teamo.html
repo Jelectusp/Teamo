@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Si te pensé un 29 de febrero</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #FFDAB9; /* Un color cálido y romántico */
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            padding: 20px;
+            color: #b03060;
+        }
+        .lyrics {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            font-size: 18px;
+            text-align: center;
+        }
+        .image-container {
+            text-align: center;
+        }
+        #sorry {
+            display: none;
+            text-align: center;
+            font-size: 24px;
+            color: #b03060;
+        }
+        #question {
+            text-align: center;
+            font-size: 24px;
+            color: #b03060;
+        }
+        button {
+            background-color: #FFB6C1; /* Un color suave y romántico */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            transition-duration: 0.4s;
+        }
+        button:hover {
+            background-color: #FF69B4; /* Un color más intenso cuando se pasa el cursor */
+        }
+    </style>
+    <script>
+        function enlargeYes() {
+            var yesButton = document.getElementById('yes');
+            yesButton.style.fontSize = (parseInt(window.getComputedStyle(yesButton).fontSize) + 2) + 'px';
+        }
+        function redirect() {
+            window.location.href = 'happy.html';
+        }
+    </script>
+</head>
+<body>
+    <h1>Si te pensé un 29 de febrero</h1>
+    <div class="image-container">
+        <img src="URL_GIF_IZQUIERDA" alt="GIF romántico izquierdo" style="float: left;">
+        <img src="URL_IMAGEN_MORAT" alt="Morat">
+        <img src="URL_GIF_DERECHA" alt="GIF romántico derecho" style="float: right;">
+    </div>
+    <div class="lyrics">
+        <p>Y volver a verte otra vez<br>
+        Con los ojitos empapados del ayer<br>
+        Con la promesa de un amor que pudo ser<br>
+        Y un te quiero de la piel al papel</p>
+        <p>Y volver a verte otra vez<br>
+        Con los luceros que juraron volver a ver<br>
+        El firmamento si volvías otra vez<br>
+        Y un te quiero de la piel al papel</p>
+    </div>
+    <div id="sorry">
+        Lo siento... ¿Podemos intentar arreglar las cosas?
+    </div>
+    <div id="question">
+        <button onclick="enlargeYes()">No</button>
+        <button id="yes" onclick="redirect()">Sí</button>
+    </div>
+</body>
+</html>
